@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Plantilla W3.CSS</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+      body {font-family: "Lato", sans-serif}
+      .mySlides {display: none}
+    </style>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+
+  <!-- Barra de Navegación -->
+  <div class="w3-top">
+    <div class="w3-bar w3-black w3-card">
+      <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Alternar Menú de Navegación"><i class="fa fa-bars"></i></a>
+      <a href="#" class="w3-bar-item w3-button w3-padding-large">INICIO</a>
+      <a href="#personajes" class="w3-bar-item w3-button w3-padding-large w3-hide-small">PERSONAJES</a>
+      <a href="#animes" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ANIMES</a>
+      <a href="#contacto" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACTO</a>
+      <div class="w3-dropdown-hover w3-hide-small">
+        <button class="w3-padding-large w3-button" title="Más">MÁS <i class="fa fa-caret-down"></i></button>     
+        <div class="w3-dropdown-content w3-bar-block w3-card-4">
+          <a href="#" class="w3-bar-item w3-button">Mercancía</a>
+          <a href="#" class="w3-bar-item w3-button">Extras</a>
+          <a href="#" class="w3-bar-item w3-button">Multimedia</a>
+        </div>
+      </div>
+      <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
+    </div>
+  </div>
+
+  <!-- Barra de Navegación en Pantallas Pequeñas (elimina el atributo onclick si deseas que la barra de navegación siempre se muestre en la parte superior del contenido al hacer clic en los enlaces) -->
+  <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+    <a href="#personajes" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">PERSONAJES</a>
+    <a href="#animes" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">ANIMES</a>
+    <a href="#contacto" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACTO</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">MERCH</a>
+  </div>
+
+  <!-- Contenido de la Página -->
+  <div class="w3-content" style="max-width:5000px;margin-top:46px">
+
+    <!-- Imágenes del Slideshow Automático -->
+    <div class="mySlides w3-display-container w3-center">
+      <div class="w3-display-container">
+        <img class="styled-image" src="file:///C:/Program Files/proyectofinal/w3images/imagen1.jpg" alt="Imagen 1">
+        <div class="w3-display-middle w3-text-white w3-padding" style="background-color: rgba(0, 0, 0, 0.7); /* Fondo semitransparente negro */">
+          <h3 style="font-family: 'Arial', sans-serif;">Uzumaki Naruto</h3>
+          <p style="font-weight: bold;">No vivas con falsedades ni miedos, porque terminarás odiándote a ti mismo.</p>
+        </div>
+      </div>
+    </div>
+    <div class="mySlides w3-display-container w3-center">
+      <div class="w3-display-container">
+        <img class="styled-image" src="file:///C:/Program Files/proyectofinal/w3images/imagen7.jpg" alt="Imagen 7">
+        <div class="w3-display-middle w3-text-white w3-padding" style="background-color: rgba(0, 0, 0, 0.7); /* Fondo semitransparente negro */">
+          <h3 style="font-family: 'Arial', sans-serif;">Jinpachi Ego</h3>
+          <p style="font-weight: bold;">Los que siguen luchando, a pesar de la desesperación, son los que reciben el poder para poder cumplir sus sueños.</p>
+        </div>
+      </div>
+    </div>
+    <div class="mySlides w3-display-container w3-center">
+      <div class="w3-display-container">
+        <img class="styled-image" src="file:///C:/Program Files/proyectofinal/w3images/imagen8.jpg" alt="Imagen 8">
+        <div class="w3-display-middle w3-text-white w3-padding" style="background-color: rgba(0, 0, 0, 0.7); /* Fondo semitransparente negro */">
+          <h3 style="font-family: 'Arial', sans-serif;">Yoh Asakura</h3>
+          <p style="font-weight: bold;">Es fácil perder la calma, más difícil es mantenerla.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sección de los personajes -->
+    <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="personajes">
+      <div class="w3-container">
+        <div class="w3-content" style="max-width: 800px;">
+          <h2 class="w3-wide">LOS PERSONAJES</h2>
+          <p class="w3-opacity"><i>Explorando el Mundo del Anime</i></p>
+          <div class="w3-card w3-white w3-padding">
+            <h3>Características de Buenos Personajes de Anime:</h3>
+            <table class="w3-table w3-bordered">
+              <tr>
+                <th>Característica</th>
+                <th>Descripción</th>
+                <th>Ejemplo</th>
+              </tr>
+              <tr>
+                <td><strong>Desarrollo</strong></td>
+                <td>Los personajes experimentan cambios significativos a lo largo de la serie.</td>
+                <td>Naruto Uzumaki de "Naruto"</td>
+              </tr>
+              <tr>
+                <td><strong>Complejidad</strong></td>
+                <td>Tienen múltiples capas de personalidad y motivaciones.</td>
+                <td>Lelouch vi Britannia de "Code Geass"</td>
+              </tr>
+              <tr>
+                <td><strong>Carisma</strong></td>
+                <td>Tienen una presencia magnética.</td>
+                <td>Luffy de "One Piece"</td>
+              </tr>
+              <tr>
+                <td><strong>Trasfondo claro</strong></td>
+                <td>Los personajes tienen trasfondos sólidos y motivaciones claras.</td>
+                <td>Edward Elric de "Fullmetal Alchemist"</td>
+              </tr>
+              <tr>
+                <td><strong>Relatabilidad</strong></td>
+                <td>Los espectadores pueden relacionarse con ellos.</td>
+                <td>Shinji Ikari de "Neon Genesis Evangelion"</td>
+              </tr>
+              <tr>
+                <td><strong>Conexiones emocionales</strong></td>
+                <td>Generan empatía y preocupación por su destino.</td>
+                <td>Gon Freecss de "Hunter x Hunter"</td>
+              </tr>
+            </table>            
+          </div>
+        </div>
+      </div>
+      
+      <div class="w3-row w3-padding-32">
+        <div class="w3-third">
+          <p>Monkey D. Luffy</p>
+          <img class="styled-banner" src="file:///C:/Program Files/proyectofinal/w3images/imagen2.jpg" alt="Imagen 2">
+        </div>
+        <div class="w3-third">
+          <p>Killua Zoldyck</p>
+          <img class="styled-banner" src="file:///C:/Program Files/proyectofinal/w3images/imagen3.jpg" alt="Imagen 3">
+        </div>
+        <div class="w3-third">
+          <p>Escanor El Leon del Orgullo</p>
+          <img class="styled-banner" src="file:///C:/Program Files/proyectofinal/w3images/imagen4.jpg" alt="Imagen 4">
+        </div>
+        <div class="w3-third">
+          <p>Etherias Natsu Dragneel</p>
+          <img class="styled-banner" src="file:///C:/Program Files/proyectofinal/w3images/imagen5.jpg" alt="Imagen 5">
+        </div>
+        <div class="w3-third">
+          <p>Roy Mustang Alquimia de Fuego</p>
+          <img class="styled-banner" src="file:///C:/Program Files/proyectofinal/w3images/imagen6.jpg" alt="Imagen 6">
+        </div>
+        <div class="w3-third">
+          <p>Yoh Asakura</p>
+          <img class="styled-banner" src="file:///C:/Program Files/proyectofinal/w3images/imagen9.jpg" alt="Imagen 4">
+        </div>
+      </div>      
+      
+    <!-- Sección de la Fechas -->
+    <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="personajes">
+    <div class="w3-black" id="animes">
+      <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+        <h2 class="w3-wide w3-center">FECHAS DE EMISION</h2>
+        <p class="w3-opacity w3-center"><i>¡Temporada de Otoño 2023!</i></p><br>
+
+        <div class="card-grid">
+          <div class="card-container">
+            <div class="card">
+              <div class="front">
+                <img class="styled-card" src="file:///C:/Program Files/proyectofinal/w3images/imagen10.jpg" alt="Imagen frontal">
+              </div>
+              <div class="back">
+                <h2>Tate no Yuusha no Nariagari Season 3</h2>
+                <p>Fecha de estreno: 6 de octubre</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-container">
+            <div class="card">
+              <div class="front">
+                <img class="styled-card" src="file:///C:/Program Files/proyectofinal/w3images/imagen11.jpg" alt="Imagen frontal">
+              </div>
+              <div class="back">
+                <h2>Goblin Slayer II</h2>
+                <p>Fecha de estreno: 7 de octubre</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-container">
+            <div class="card">
+              <div class="front">
+                <img class="styled-card" src="file:///C:/Program Files/proyectofinal/w3images/imagen12.jpg" alt="Imagen frontal">
+              </div>
+              <div class="back">
+                <h2>Dr. Stone: New World Part 2</h2>
+                <p>Fecha de estreno: 12 de octubre</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-container">
+            <div class="card">
+              <div class="front">
+                <img class="styled-card" src="file:///C:/Program Files/proyectofinal/w3images/imagen13.jpg" alt="Imagen frontal">
+              </div>
+              <div class="back">
+                <h2>Shingeki no Kyojin The Final Season Part 2</h2>
+                <p>Fecha de estreno: 4 de noviembre</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Sección de Contacto -->
+    <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contacto">
+      <h2 class="w3-wide w3-center">CONTACTO</h2>
+      <p class="w3-opacity w3-center"><i>¿Eres fan del anime? ¡Déjanos un mensaje!</i></p>
+      <div class="w3-row w3-padding-32">
+        <div class="w3-col m6 w3-large w3-margin-bottom">
+          <i class="fa fa-map-marker" style="width:30px"></i>Santiago, Republica Dominicana<br>
+          <i class="fa fa-phone" style="width:30px"></i> Teléfono: +1(809)383-2838<br>
+          <i class="fa fa-envelope" style="width:30px"> </i> Email: jeyco0009@gmail.com<br>
+        </div>
+        <div class="w3-col m6">
+          <form action="/action_page.php" target="_blank">
+            <div class="w3-row-padding"
+
+  style="margin:0 -16px 8px -16px">
+              <div class="w3-half">
+                <input class="w3-input w3-border" type="text" placeholder="Nombre" required name="Nombre">
+              </div>
+              <div class="w3-half">
+                <input class="w3-input w3-border" type="text" placeholder="Correo Electrónico" required name="Correo Electrónico">
+              </div>
+            </div>
+            <input class="w3-input w3-border" type="text" placeholder="Mensaje" required name="Mensaje">
+            <button class="w3-button w3-black w3-section w3-right" type="submit">ENVIAR</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    
+  <!-- Fin del Contenido de la Página -->
+  </div>
+
+  <!-- Pie de Página -->
+  <footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+    <p class="w3-medium">Desarrollado por: Esteban Cabrera</p>
+  </footer>
+
+  <script>
+  // Slideshow Automático - cambia la imagen cada 4 segundos
+  var myIndex = 0;
+  carousel();
+
+  function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 4000);    
+  }
+
+  // Utilizado para alternar el menú en pantallas pequeñas al hacer clic en el botón de menú
+  function myFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+      x.className += " w3-show";
+    } else { 
+      x.className = x.className.replace(" w3-show", "");
+    }
+  }
+
+  // Cuando el usuario hace clic en cualquier parte fuera del modal, ciérralo
+  var modal = document.getElementById('ticketModal');
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+  </script>
+
+  </body>
+</html>
